@@ -4,8 +4,8 @@ import React from 'react'
 const Intro = () => {
     return (
         <div>
-            
-            
+
+
 
             <div className="flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 p-4">
                 {/* Introduction Section */}

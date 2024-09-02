@@ -1,9 +1,10 @@
 "use client"
 
 import React from 'react'
-import { useState, useRef, useEffect, ChangeEvent } from "react"; // Import React hooks and types
-import { Input } from "@/components/ui/input"; // Import custom Input component
-import { Button } from "@/components/ui/button"; // Import custom Button component
+import { useState, useRef, useEffect, ChangeEvent } from "react"; 
+import { Input } from '../ui/input';
+import { Button } from '../ui/button';
+
 
 
 export default function Countdown() {
