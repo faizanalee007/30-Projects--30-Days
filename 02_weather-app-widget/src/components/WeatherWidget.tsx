@@ -3,10 +3,13 @@ import React, { useState } from "react";
 import axios from "axios";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 
+
 const WeatherWidget = () => {
+
     const [city, setCity] = useState<string>("");
     const [weather, setWeather] = useState<any>(null);
     const [error, setError] = useState<string>("");
+
 
     const fetchWeather = async () => {
         if (city === "") {
@@ -44,6 +47,7 @@ const WeatherWidget = () => {
             setCity(value);
         }
     };
+
 
 
     return (
