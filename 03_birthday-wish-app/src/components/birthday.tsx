@@ -197,7 +197,7 @@ const Birthday = () => {
             <button
                 onClick={celebrate}
                 disabled={celebrating}
-                className="bg-red-600 text-[#FFD700] cursor-pointer font-extrabold text-xl py-2 px-6 rounded-full mt-8 transition-transform transform hover:scale-110"
+                className="bg-red-600 text-[#FFD700] cursor-pointer font-extrabold text-xl py-2 px-6 rounded-full mt-12 transition-transform transform hover:scale-110"
             >
                 Start Celebration!
             </button>
