@@ -1,5 +1,5 @@
 'use client'
-import Image from "next/image";
+
 import { ChangeEvent, useState ,useEffect} from "react";
 
 
@@ -12,7 +12,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true); 
 
 
-  let error = 'Number to daaliyee!'
+  const error = 'Number to daaliyee!'
 
 
   // Change state of Number1 input Field
@@ -115,7 +115,6 @@ export default function Home() {
         { clearBtn && <button className=" px-8 py-2 bg-gray-800 hover:bg-gray-700 rounded-md text-gray-100 hover:scale-105 transition-all text-xl duration-300" onClick={clearButton}>Clear</button>}
 
         
-
       </div>
 
 
