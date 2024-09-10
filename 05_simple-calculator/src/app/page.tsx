@@ -69,10 +69,10 @@ export default function Home() {
 
   const [bgColor, setBgColor] = useState(`bg-gray-600`)
 
-  const bgChange = (color:string)=> {
+  const bgChange = (color: string) => {
 
     setBgColor(color)
-  
+
 
   }
 
@@ -96,20 +96,26 @@ export default function Home() {
   return (
     <div className="bg-[url('/bg.png')] bg-cover bg-center bg-no-repeat min-h-screen w-full flex items-center justify-center">
 
-      <div className=" flex items-center justify-center">
+      <div className=" flex  flex-col items-center justify-center gap-12">
 
-        <div className=" flex flex-col items-center justify-center mr-12 space-y-7 p-4  bg-gray-500 bg-opacity-50 border-2 rounded-2xl border-gray-800 shadow-lg shadow-black hover:-translate-x-5 transition-all duration-300">
-          <h2 className="font-bold text-xl -mb-4">SKINS</h2>
-          
-          <button onClick={()=>bgChange('bg-cyan-500')} className="w-12 h-12 rounded-full border border-gray-100 hover:scale-105 transition-all duration-200 bg-cyan-500"></button>
 
-          <button onClick={()=>bgChange('bg-[#d14d52]')} className="w-12 h-12 rounded-full border border-gray-100 hover:scale-105 transition-all duration-200 bg-[#d14d52]"></button>
 
-          <button onClick={()=>bgChange('bg-blue-500')} className="w-12 h-12 rounded-full border border-gray-100 hover:scale-105 transition-all duration-200 bg-blue-400"></button>
+        <div className=" flex flex-col items-center justify-center bg-gray-500 bg-opacity-50 border-2 rounded-2xl border-gray-800 shadow-lg shadow-black hover:-translate-y-5 transition-all duration-300  px-6 py-2 gap-2 " >
+          <h2 className="font-bold text-3xl">SKINS</h2>
 
-          <button onClick={()=>bgChange('bg-[#8f8aca]')} className="w-12 h-12 rounded-full border border-gray-100 hover:scale-105 transition-all duration-200 bg-[#8f8aca]"></button>
+          <div className=" flex items-center justify-center space-x-5 ">
 
-          <button onClick={()=>bgChange('bg-[#e0e05a]')} className="w-12 h-12 rounded-full border border-gray-100 hover:scale-105 transition-all duration-200 bg-[#e0e05a]"></button>
+            <button onClick={() => bgChange('bg-cyan-500')} className="w-12 h-12 rounded-full border border-gray-100 hover:scale-105 transition-all duration-200 bg-cyan-500"></button>
+
+            <button onClick={() => bgChange('bg-[#d14d52]')} className="w-12 h-12 rounded-full border border-gray-100 hover:scale-105 transition-all duration-200 bg-[#d14d52]"></button>
+
+            <button onClick={() => bgChange('bg-blue-500')} className="w-12 h-12 rounded-full border border-gray-100 hover:scale-105 transition-all duration-200 bg-blue-400"></button>
+
+            <button onClick={() => bgChange('bg-[#8f8aca]')} className="w-12 h-12 rounded-full border border-gray-100 hover:scale-105 transition-all duration-200 bg-[#8f8aca]"></button>
+
+            <button onClick={() => bgChange('bg-[#e0e05a]')} className="w-12 h-12 rounded-full border border-gray-100 hover:scale-105 transition-all duration-200 bg-[#e0e05a]"></button>
+          </div>
+
         </div>
 
         <div className={`${bgColor}  shadow-lg shadow-black hover:scale-110 hover:shadow-black hover:shadow-2xl transition-all duration-300 border-4 p-8 border-black rounded-3xl  flex flex-col items-center justify-center gap-6`} >
@@ -135,7 +141,7 @@ export default function Home() {
 
           {clearBtn && <button className=" px-8 py-2 bg-gray-800 hover:bg-gray-700 rounded-md text-gray-100 hover:scale-105 transition-all text-xl duration-300" onClick={clearButton}>Clear</button>}
 
-        
+
 
 
 
