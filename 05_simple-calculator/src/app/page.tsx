@@ -65,18 +65,14 @@ export default function Home() {
 
   }
 
-  // Calculator Interface Color changing
-
+  // Interface Color changing
   const [bgColor, setBgColor] = useState(`bg-gray-600`)
-
   const bgChange = (color: string) => {
 
     setBgColor(color)
-
-
   }
 
-
+//Loading Page
   useEffect(() => {
     setTimeout(() => {
       setLoading(false); // Hide loading screen after 2 seconds
@@ -97,8 +93,6 @@ export default function Home() {
     <div className="bg-[url('/bg.png')] bg-cover bg-center bg-no-repeat min-h-screen w-full flex items-center justify-center">
 
       <div className=" flex  flex-col items-center justify-center gap-12">
-
-
 
         <div className=" flex flex-col items-center justify-center bg-gray-500 bg-opacity-50 border-2 rounded-2xl border-gray-800 shadow-lg shadow-black hover:-translate-y-5 transition-all duration-300  px-6 py-2 gap-2 " >
           <h2 className="font-bold text-3xl">SKINS</h2>
@@ -122,7 +116,7 @@ export default function Home() {
 
           <h1 className="text-3xl text-black text-left font-bold">Simple Calculator</h1>
 
-          <p className="text-gray-700 text-2xl text-right font-extrab500 font-mono -mt-4">By Faizan Ahmed</p>
+          <p className="text-black text-2xl text-right font-extrab500 font-mono -mt-4">By Faizan Ahmed</p>
 
           <div className="mt-4 gap-3 flex ">
             <input className="inputField rounded-md w-40" type="number" placeholder="number 1" value={Number1} onChange={Number1Change} />
@@ -140,20 +134,8 @@ export default function Home() {
           <input className="bg-gray-100 inputField font-bold outline outline-gray-500 w-[300px] rounded-md mt-4 text-2xl" type="number" placeholder="result" value={answer} readOnly />
 
           {clearBtn && <button className=" px-8 py-2 bg-gray-800 hover:bg-gray-700 rounded-md text-gray-100 hover:scale-105 transition-all text-xl duration-300" onClick={clearButton}>Clear</button>}
-
-
-
-
-
-
         </div>
-
-
       </div>
-
-
-
-
     </div>
   );
 }
